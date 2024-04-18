@@ -18,4 +18,6 @@ This repository stores common tools that I use in data science and computational
 ### Themes
 #### Plotnine
 
+### Functions
+
 
