@@ -6,18 +6,18 @@ This repository stores common tools that I use in data science and computational
 
 ## Contents
 
-### Environments
+### env: Environments
 
 #### Conda
 - jup_data: Contains the packages needed to conduct basic data science in Python using Jupyter notebooks.
 
 #### Docker
 
-### Palettes
+### viz: Visualization aesthetics
+#### Palettes
 
-### Themes
-#### Plotnine
+#### Themes
 
-### Functions
+### func: Functions
 
 
