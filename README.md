@@ -1,4 +1,4 @@
-# tools
+# dbt: david bacsik tools
 Repository for storing common tools, like environments, palettes, etc...
 
 ## Introduction
