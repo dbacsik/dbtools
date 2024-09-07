@@ -1,0 +1,29 @@
+# Nextstrain
+### General Dockerfile for projects using Nextstrain.
+### Mostly based on the nextstrain image.
+### Uses a multi-stage build to add Jupyter
+### capabilities.
+
+# BUILD STAGE
+FROM mambaorg/micromamba:1.5.7 AS build
+
+## Install requirements from env.yml
+USER root
+COPY env.yml /tmp/env.yml
+RUN micromamba install -y -n base -f /tmp/env.yml && \
+    micromamba clean --all --yes
+
+# FINAL STAGE
+FROM nextstrain/base:build-20240903T191712Z AS final
+
+## Copy the items installed by mamba during the build stage
+COPY --from=build /opt/conda/. /opt/conda/
+
+## Parameters
+ENV PATH="/opt/conda/bin:$PATH"
+WORKDIR /home
+EXPOSE 8888
+
+## Run commands
+### Launch Jupyter notebook server
+CMD ["jupyter", "notebook", "--port=888", "--no-browser", "--allow-root"]
