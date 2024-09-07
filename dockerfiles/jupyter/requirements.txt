@@ -1,0 +1,7 @@
+# Custom python packages
+biopython
+fastparquet
+plotnine
+
+# Custom R packages
+r-pacman
