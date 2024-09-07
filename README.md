@@ -6,12 +6,13 @@ This repository stores common tools that I use in data science and computational
 
 ## Contents
 
+### Dockerfiles
+- jupyter: Based on the jupyter datascience-notebook image.
+
 ### env: Environments
 
 #### Conda
 - jup_data: Contains the packages needed to conduct basic data science in Python using Jupyter notebooks.
-
-#### Docker
 
 ### viz: Visualization aesthetics
 #### Palettes
