@@ -15,7 +15,7 @@ RUN micromamba install -y -n base -f /tmp/env.yml && \
 FROM quay.io/jupyter/datascience-notebook:2024-09-02 AS final
 
 ## Copy the items installed by mamba during the build stage
-COPY --from=build /opt/conda/* /opt/conda
+COPY --from=build /opt/conda/. /opt/conda/
 
 ## Parameters
 ENV PATH="/opt/conda/bin:$PATH"
