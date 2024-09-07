@@ -8,6 +8,7 @@ This repository stores common tools that I use in data science and computational
 
 ### Dockerfiles
 - jupyter: Based on the jupyter datascience-notebook image.
+- nextstrain: Adds jupyter capabilites to base nextstrain image.
 
 ### env: Environments
 
