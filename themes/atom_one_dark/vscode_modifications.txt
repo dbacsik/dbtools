@@ -1,0 +1,11 @@
+#settings.json
+{
+    "editor.fontFamily": "'Monaspace Neon', monospace",
+    "editor.fontLigatures": "'calt', 'liga', 'ss01', 'ss02', 'ss03', 'ss04', 'ss05', 'ss06', 'ss07', 'ss08', 'ss09', 'cv60'",
+    "workbench.colorTheme": "Atom One Dark",
+    "workbench.preferredDarkColorTheme": "Atom One Dark",
+    "workbench.colorCustomizations": {
+        "editor.background": "#1D2026",
+        "editor.foreground": "#B8BFCC"
+    }
+}
