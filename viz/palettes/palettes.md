@@ -17,4 +17,11 @@ Colorblind-friendly: No
 Hex: "#54d2d2", "#ff6150", "#ffcd00", "#33c080", "#9d50ac"
 ```
 
+# Clinical Modern  
+I made a pattern for clinical data that is modern but still fairly serious.  I grabbed a few colors I like from random published plots.  The palette is stored here on [Coolors](https://coolors.co/f4d58d-8db4d2-958ed2-d2958e-8ed2c2).
 
+```
+Impressions: Muted, serious, colorful.
+Colorblind-friendly: Unknown:
+Hex: "#F4D58D", "#8DB4D2", "#958ED2", "#D2958E", "#8ED2C2"
+```
