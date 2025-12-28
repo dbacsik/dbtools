@@ -1,7 +1,12 @@
 # A custom ggplot2 theme with a clinical and minimalist style.
 #
-# To use, save this file and then source it in your R script:
+# To use:
 # source("path/to/theme_clinical.R")
+#
+# This will automatically:
+# 1. Load required libraries (ggplot2, ggthemes)
+# 2. Set theme_clinical() as the default theme
+# 3. Set clinical_colors as the default discrete color/fill scale
 
 library(ggplot2)
 library(ggthemes)
@@ -28,18 +33,18 @@ theme_clinical <- function(base_size = 13, base_family = "sans") {
       plot.background = element_rect(fill = "white", colour = NA),
       plot.title = element_text(
         face = "bold",
-        size = rel(1.44), # 20% larger than axis titles
-        hjust = 0, # Left-align title
+        size = rel(1.44), 
+        hjust = 0, 
         margin = margin(b = 10)
       ),
       plot.subtitle = element_text(
-        size = rel(1.2), # Same size as axis titles
-        hjust = 0, # Left-align subtitle
+        size = rel(1.2), 
+        hjust = 0, 
         margin = margin(b = 10)
       ),
       plot.caption = element_text(
         size = rel(0.8),
-        hjust = 1, # Right-align caption
+        hjust = 1, 
         margin = margin(t = 10)
       ),
 
@@ -49,14 +54,14 @@ theme_clinical <- function(base_size = 13, base_family = "sans") {
       panel.grid.minor = element_line(colour = "grey80", linetype = "solid", linewidth = 0.5),
 
       # Axis appearance
-      axis.ticks = element_line(colour = "black", linetype = "solid", linewidth = 0.5), # Thin axis ticks
-      axis.text = element_text(size = rel(1), colour = "black"), # Base size
-      axis.title = element_text(size = rel(1.2), colour = "black"), # 20% larger than axis text
+      axis.ticks = element_line(colour = "black", linetype = "solid", linewidth = 0.5), 
+      axis.text = element_text(size = rel(1), colour = "black"), 
+      axis.title = element_text(size = rel(1.2), colour = "black"), 
 
       # Legend appearance
       legend.position = "right",
-      legend.background = element_rect(fill = "white", colour = NA), # Light grey background
-      legend.key = element_rect(fill = "white", colour = NA), # Match panel background
+      legend.background = element_rect(fill = "white", colour = NA), 
+      legend.key = element_rect(fill = "white", colour = NA), 
       legend.title = element_text(face = "bold"),
 
       # Facet appearance
@@ -68,3 +73,17 @@ theme_clinical <- function(base_size = 13, base_family = "sans") {
       )
     ))
 }
+
+# 3. SET DEFAULTS (EXECUTES ON SOURCE)
+# -----------------------------------------------------------------------------
+
+# Set the theme as default
+theme_set(theme_clinical())
+
+# Overwrite default discrete color scales in the global environment
+# This allows you to use your custom palette without adding scale_color_manual() every time.
+assign("scale_colour_discrete", function(..., values = clinical_colors) scale_colour_manual(..., values = values), envir = globalenv())
+assign("scale_fill_discrete", function(..., values = clinical_colors) scale_fill_manual(..., values = values), envir = globalenv())
+
+# Confirmation message
+message("theme_clinical loaded. Default theme and color scales updated.")
