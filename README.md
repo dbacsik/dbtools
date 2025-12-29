@@ -6,20 +6,18 @@ This repository stores common tools that I use in data science and computational
 
 ## Contents
 
-### Dockerfiles
-- jupyter: Based on the jupyter datascience-notebook image.
-- nextstrain: Adds jupyter capabilites to base nextstrain image.
+### dockerfiles
+Currently empty.
 
-### env: Environments
+### env
+Currently empty.
 
-#### Conda
-- jup_data: Contains the packages needed to conduct basic data science in Python using Jupyter notebooks.
+### software_themes
+- atom_one_dark: Modifications for the Atom One Dark theme for various editors.
 
 ### viz: Visualization aesthetics
-#### Palettes
-
-#### Themes
-
-### func: Functions
+- palettes: Color palettes for plots.
+- python/plotnine: `theme_clinical` for `plotnine` plots.
+- R/ggplot: `theme_clinical` for `ggplot2` plots.
 
 
