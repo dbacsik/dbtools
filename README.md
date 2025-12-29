@@ -1,16 +1,10 @@
-# dbtools: david bacsik's tools
-Repository for storing common tools, like environments, palettes, etc...
-
-## Introduction
-This repository stores common tools that I use in data science and computational biology. Examples are conda environments and color palettes.
+# dbtools: Personal Tools
+Repository for storing common tools, like themes, palettes, and agent configurations.
 
 ## Contents
 
-### dockerfiles
-Currently empty.
-
-### env
-Currently empty.
+### agent_guidelines
+- Guidelines for working with AI coding assistants.
 
 ### software_themes
 - atom_one_dark: Modifications for the Atom One Dark theme for various editors.
@@ -19,5 +13,3 @@ Currently empty.
 - palettes: Color palettes for plots.
 - python/plotnine: `theme_clinical` for `plotnine` plots.
 - R/ggplot: `theme_clinical` for `ggplot2` plots.
-
-
