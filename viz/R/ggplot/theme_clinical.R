@@ -26,7 +26,7 @@ theme_clinical <- function(base_size = 13, base_family = "sans") {
   (theme_foundation(base_size = base_size, base_family = base_family)
   + theme(
       # General plot appearance
-      plot.background = element_rect(fill = "white", colour = NA),
+      plot.background = element_rect(fill = "#FFFFFF", colour = NA),
       plot.title = element_text(
         face = "bold",
         size = rel(1.44), 
@@ -56,8 +56,8 @@ theme_clinical <- function(base_size = 13, base_family = "sans") {
 
       # Legend appearance
       legend.position = "right",
-      legend.background = element_rect(fill = "white", colour = NA), 
-      legend.key = element_rect(fill = "white", colour = NA), 
+      legend.background = element_rect(fill = "#FFFFFF", colour = NA), 
+      legend.key = element_rect(fill = "#FFFFFF", colour = NA), 
       legend.title = element_text(face = "bold"),
 
       # Facet appearance
