@@ -33,13 +33,13 @@ def theme_clinical(base_size=13, base_family='sans'):
 
         # Panel appearance
         panel_background=p9.element_rect(fill="#EEEEEE", colour=None),
-        panel_border=p9.element_rect(colour='black', fill=None, size=0.5),
+        panel_border=p9.element_rect(colour='#000000', fill=None, size=0.5),
         panel_grid_major=p9.element_line(colour="#999999", linetype="solid", size=0.5),
         panel_grid_minor=p9.element_line(colour="#CCCCCC", linetype="solid", size=0.5),
 
         # Axis appearance
-        axis_ticks=p9.element_line(colour="black", linetype="solid", size=0.5),
-        axis_text=p9.element_text(size=base_size, colour="black"),
+        axis_ticks=p9.element_line(colour="#000000", linetype="solid", size=0.5),
+        axis_text=p9.element_text(size=base_size, colour="#000000"),
         axis_title=p9.element_text(size=base_size * 1.2, weight="bold", colour="black"),
 
         # Legend appearance
@@ -49,11 +49,11 @@ def theme_clinical(base_size=13, base_family='sans'):
         legend_title=p9.element_text(weight="bold"),
 
         # Facet appearance
-        strip_background=p9.element_rect(fill="#E5E5E5", colour=None),
+        strip_background=p9.element_rect(fill="#F6F6F6", colour=None),
         strip_text=p9.element_text(
             weight="bold",
             size=base_size * 1.1,
-            margin={'t': 5, 'b': 5}
+            margin={'t': 10, 'b': 10}
         )
     )
 
