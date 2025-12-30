@@ -46,13 +46,13 @@ theme_clinical <- function(base_size = 13, base_family = "sans") {
 
       # Panel appearance
       panel.background = element_rect(fill = "#EEEEEE", colour = "#000000"),
-      panel.grid.major = element_line(colour = "grey60", linetype = "solid", linewidth = 0.5),
-      panel.grid.minor = element_line(colour = "grey80", linetype = "solid", linewidth = 0.5),
+      panel.grid.major = element_line(colour = "#999999", linetype = "solid", linewidth = 0.5),
+      panel.grid.minor = element_line(colour = "#CCCCCC", linetype = "solid", linewidth = 0.5),
 
       # Axis appearance
-      axis.ticks = element_line(colour = "black", linetype = "solid", linewidth = 0.5), 
-      axis.text = element_text(size = rel(1), colour = "black"), 
-      axis.title = element_text(size = rel(1.2), colour = "black"), 
+      axis.ticks = element_line(colour = "#000000", linetype = "solid", linewidth = 0.5), 
+      axis.text = element_text(size = rel(1), colour = "#000000"), 
+      axis.title = element_text(size = rel(1.2), colour = "#000000"), 
 
       # Legend appearance
       legend.position = "right",
@@ -61,11 +61,11 @@ theme_clinical <- function(base_size = 13, base_family = "sans") {
       legend.title = element_text(face = "bold"),
 
       # Facet appearance
-      strip.background = element_rect(fill = "grey90", colour = NA),
+      strip.background = element_rect(fill = "#F6F6F6", colour = "#000000"),
       strip.text = element_text(
         face = "bold",
         size = rel(1.1),
-        margin = margin(t = 5, b = 5)
+        margin = margin(t = 10, b = 10)
       )
     ))
 }
